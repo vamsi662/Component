@@ -38,7 +38,7 @@ class App extends Component {
       userDetailsList: initialUserDetailsList,
     })
   }
-  onDeleteUser = () => {
+  onDeleteUser = uniqueNo => {
     const {userDetailsList} = this.state
     const filteredUserDetailsList = userDetailsList.filter(
       each => each.uniqueNo !== uniqueNo,
